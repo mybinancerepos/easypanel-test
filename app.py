@@ -3,8 +3,8 @@ import time, requests, logging
 logging.basicConfig(level=logging.DEBUG, format='%(name)s - %(levelname)s - %(message)s')
 
 def print_hi():
-    logging.info('This is Log')
-    print('This is Log')
+    logging.info('This is logging')
+    print('This is print')
 
 if __name__ == '__main__':
     while True:
