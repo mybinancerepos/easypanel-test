@@ -8,12 +8,12 @@ logging.basicConfig(level=logging.DEBUG, format='%(name)s - %(levelname)s - %(me
 log_counter = 0
 
 def print_hi():
-    global log_counter
-    log_counter += 1
     logging.info(f'This is logging. Log count: {log_counter}')
     print(f'This is print. Log count: {log_counter}')
 
 if __name__ == '__main__':
     while True:
+        log_counter += 1
         print_hi()
-        time.sleep(2)
+        if log_counter % 10 == 0:
+            time.sleep(1)  # Sleep for 1 second between each print
