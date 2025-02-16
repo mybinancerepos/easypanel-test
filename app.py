@@ -9,7 +9,6 @@ log_counter = 0
 
 def print_hi():
     logging.info(f'This is logging. Log count: {log_counter}')
-    print(f'This is print. Log count: {log_counter}')
 
 if __name__ == '__main__':
     while True:
